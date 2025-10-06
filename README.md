@@ -54,6 +54,4 @@ It helps manage patient admissions, discharges, and doctor registrations using b
 ARR_Hospital_Care_System/
 │
 ├── HOSPITAL_MANAGEMENT.c # Main source code
-├── patients_data.txt # Patient records (auto-created)
-├── doctor_data.txt # Doctor records (auto-created)
 └── README.md # Project documentation
