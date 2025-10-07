@@ -6,7 +6,7 @@
 - Riventhiga S  
 
 ### 📅 Duration
-**November 2024 – December 2024**
+**November 2022 – December 2022**
 
 ---
 
