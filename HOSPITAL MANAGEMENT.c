@@ -31,7 +31,6 @@
 #include <string.h>
 #include <time.h>
 
-// Structure to store patient information
 struct PatientInfo {
     int patientID;
     char name[50];
@@ -40,7 +39,6 @@ struct PatientInfo {
     char admitDate[15];
 } patient;
 
-// Structure to store doctor details
 struct DoctorInfo {
     int doctorID;
     char name[50];
@@ -51,19 +49,17 @@ struct DoctorInfo {
 
 FILE *file;
 
-// Function Declarations
 void admitNewPatient();
 void displayPatients();
 void releasePatient();
 void registerDoctor();
 void displayDoctors();
 
-// Main function
 int main() {
     int choice;
 
     while (1) {
-        system("cls"); // Clear screen each time menu shows
+        system("cls"); 
         printf("====================================================\n");
         printf("          *** ARR HOSPITAL CARE SYSTEM ***\n");
         printf("====================================================\n");
@@ -102,13 +98,12 @@ int main() {
         }
 
         printf("\n\nPress Enter to continue...");
-        getchar(); // to pause
-        getchar(); // wait for user input
+        getchar(); 
+        getchar(); 
     }
     return 0;
 }
 
-// Function to admit a new patient
 void admitNewPatient() {
     system("cls");
     char today[15];
@@ -142,7 +137,6 @@ void admitNewPatient() {
     printf("\n Patient admitted successfully on %s.\n", patient.admitDate);
 }
 
-// Function to display all patients
 void displayPatients() {
     system("cls");
     printf("<=== Patient Records ===>\n\n");
@@ -166,7 +160,6 @@ void displayPatients() {
     fclose(file);
 }
 
-// Function to discharge a patient
 void releasePatient() {
     system("cls");
     int id, found = 0;
@@ -238,7 +231,6 @@ void registerDoctor() {
     printf("\n Doctor registered successfully on %s.\n", doctor.joinDate);
 }
 
-// Function to display all doctors
 void displayDoctors() {
     system("cls");
     printf("<=== Doctor Details ===>\n\n");
@@ -261,3 +253,4 @@ void displayDoctors() {
 
     fclose(file);
 }
+
